@@ -45,7 +45,7 @@ header h1 {
 header h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: 200;
-    font-size: 5px;
+    font-size: 15px;
     letter-spacing: 3px;
     color: #000000;
     text-transform: uppercase;
@@ -85,6 +85,11 @@ header nav ul li{
     letter-spacing: 3px;
     color: #172029;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 
@@ -105,7 +110,6 @@ a {
 
 
 footer {
-
     width: calc(100% - 80px);
     padding: 40px 40px;
     background-color: #172029;
@@ -278,16 +282,22 @@ hr {
         padding: 16px 42px;
         
     }
-        
-}
-.meist-description {
+
+    .body-description {
+        display: block;           
+        align-items: center;     
+        text-align: center;      
+        height: 60px; 
+    }
+
+    .body-meist, img.chefs {
+        margin: 0 10px;
+    }
     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
 }
+    
+
+
 .body-meist{
 
     order: 1;
@@ -310,9 +320,11 @@ img.circular {
 }
 
 img.chefs {
+    display: table;
     order: 2;
     border-radius: 8%;
     max-width: 40%;
+    margin-top: 10px;
 
 }
 .meist {
@@ -328,18 +340,75 @@ img.chefs {
 }
 
 @media (max-width: 768px) {
+
+    header .header-banner {
+        
+        height: calc(100vh - 400px);
+        
+    }   
+        
+    header h1 a {
+        
+        font-size: 80px;
+        
+    }  
+        
+    header h2 {
+        
+        font-size: 15px;
+        margin-top: 20px;
+        
+    }
+        
+    header nav ul li {
+        
+        padding: 16px 42px;
+        
+    }
+
+    .body-description {
+        display: block;           
+        align-items: center;     
+        text-align: center;      
+        height: 60px; 
+    }
     .meist-description {
         flex-direction: column;   
     }
 
     .body-meist {
-        width: 100%;             
-        margin-right: 0;         
+        margin: 0%;
+        display: block;
+        justify-content: center;
+        width: 100%; 
+        text-align: justify; 
+
     }
 
     .img-chefs {
+        margin-left: 0%;
+        margin-right: 0%;
+        display: block;
+        justify-content: center;
         max-width: 100%;         
-        margin-top: 20px;        
+        margin-top: 20px;  
+        max-width: fit-content;   
+    
+    }
+
+    .meist{
+        margin: 0%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .gallery-links {
+        justify-content: center;
+        display: flex;
+    }
+
+    .img-chefs {
+        justify-content: center;
+        width: fit-content;
     }
 }
-
