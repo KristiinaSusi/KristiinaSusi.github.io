@@ -293,6 +293,10 @@ hr {
     .body-meist, img.chefs {
         margin: 0 10px;
     }
+
+    .meist {
+        justify-content: center;
+    }
     
 }
     
