@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+
+.header-description {
+    width: 100%;
+    height: calc(100vh - 500px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+}
+
+.header-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+
+header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    
+
+}
+
+header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    font-size: 5px;
+    letter-spacing: 3px;
+    color: #000000;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header .logo {
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0 20px 0;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;   
+    place-items: center;
+}
+
+header nav ul {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 5px;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 16px 16px;
+}
+
+.meist-description {
+    display: table;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-decoration: none;
+}
+
+
+nav ul li a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+footer {
+
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #172029;
+    margin-top: 20px;
+    overflow: hidden;
+    
+}
+
+footer ul {
+
+    width: fit-content;
+    float: left;
+    padding-left: 0px;
+    margin-left: 10%;
+        
+}
+        
+footer ul li {
+        
+    display: block;
+    padding: 0 0 10px 0;
+        
+}
+        
+        
+footer ul li p {
+        
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+        
+}
+        
+footer ul li a {
+        
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+        
+}
+
+.footer-sm {
+
+    width: 32px;
+    float: right;
+    margin-right: 10%;
+    
+}
+    
+.footer-sm img {
+    
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.footer-sm img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-links {
+
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    
+    
+    }
+
+
+.gallery-image:hover {
+        transform: scale(1.1);
+}   
+.gallery-image {
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+hr {
+
+    color: #4f5663;
+    border-width: 2px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+        
+    }
+        
+.gallery-h2 {
+        
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: center;
+        
+}
+
+.post-header {       
+
+    /*kujundus*/
+    
+    font-family: "Open Sans", sans-serif;
+    font-weight: 1000;
+    font-style: initial;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 9px #000000;
+    
+       /*positsioneerimine*/
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+@media only screen and (min-width: 950px) {   
+
+    header .header-banner {
+        
+        height: calc(100vh - 400px);
+        
+    }   
+        
+    header h1 a {
+        
+        font-size: 80px;
+        
+    }  
+        
+    header h2 {
+        
+        font-size: 15px;
+        margin-top: 20px;
+        
+    }
+        
+    header nav ul li {
+        
+        padding: 16px 42px;
+        
+    }
+        
+}
+.meist-description {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.body-meist{
+
+    order: 1;
+    display: table;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #000000;
+    margin-right: 20px;
+    max-width: 55%;
+
+}
+
+img.circular {
+    border-radius: 50%;
+    max-width: 300px; /* Adjust as needed */
+    max-height: 300px;
+}
+
+img.chefs {
+    order: 2;
+    border-radius: 8%;
+    max-width: 40%;
+
+}
+.meist {
+    margin-left: 15%;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .meist-description {
+        flex-direction: column;   
+    }
+
+    .body-meist {
+        width: 100%;             
+        margin-right: 0;         
+    }
+
+    .img-chefs {
+        max-width: 100%;         
+        margin-top: 20px;        
+    }
+}
+
